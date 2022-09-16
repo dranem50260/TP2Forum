@@ -1,0 +1,132 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #cfd9df;
+    color: grey;
+    margin: auto;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    margin-left: 180px;
+    padding: 0px 16px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 2px solid grey;
+    padding: 5px;
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+th {
+    background-color: black;
+    color:white;
+}
+
+input, select {
+     padding: 6px;
+     display:block;
+     margin: 5px;
+}
+
+nav{
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    width: 175px;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px;
+}
+
+nav a.active{
+    background-color: #2b6adf;
+    color: white;
+}
+
+nav a:hover:not(.active){
+    color: #1b1b1b;
+    background-color: white;
+    transition-duration: .6s;
+}
+
+/*
+.anchor:link    {color:green;}
+.anchor:visited {color:green;}
+.anchor:hover   {color:red;}
+.anchor:active  {color:yellow;}
+*/
+
+.invisible {
+    display: none;
+}
+
+/*
+.findex {
+    
+}
+
+.flogin {
+    
+}
+.fcreate {
+    
+}
+.uIndex {
+    
+}
+.uCreate {
+    
+}
+*/
+
+p.bold { font-weight: 700; }
+p.ital { font-style: italic; }
+
+.hrgreen {background-color: rgb(33, 245, 108); color:white;}
+.hrred {background-color: rgb(241, 38, 38); color:white;}
+.hrblue {background-color: rgb(35, 147, 245); color:white;}
+
+@media screen and (max-width: 800px) {
+    nav {
+        height: auto;
+        position: relative;
+        width: 100%;
+    }
+    nav a{
+        float:none;
+        text-align: center;
+    }
+    main{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav a {
+        float:none;
+        text-align: center;
+    }
+}
